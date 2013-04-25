@@ -6,7 +6,8 @@ module AlternateRails::ViewHelpers
   
   def alternate_button(format)
     icons = {
-      json: 'icon-list'
+      json: 'icon-list',
+      ics:  'icon-calendar'
     }
     format_translation = t("formats.#{format}", :default => h(format))
     link_to "<i class='#{icons[format]}'></i> #{format_translation}".html_safe, 
