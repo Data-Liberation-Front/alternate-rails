@@ -13,10 +13,10 @@ full details.
 
 ## Usage
 
-In your controller, if you have alternative representations, put ```set_alternate_formats``` 
-in a before_filter:
+In your controller, if you have alternative representations, call ```set_alternate_formats``` 
+from a before_filter:
 
-```before_filter :set_alternate_formats, :only => [:index, :show]```
+```before_filter(:only => [:index, :show]) { set_alternate_formats [:json, :ics] }```
 
 In the header in your layout, call `alternate_auto_discovery_link_tags` to generate
 autodiscover link tags.
