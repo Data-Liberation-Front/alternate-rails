@@ -1,17 +1,17 @@
-= AlternateRails
+# AlternateRails
 
 Helpers for Rails 3.2 for building autodiscovery and links for alternative page formats.
 
-== License
+## License
 
 This code is open source under the MIT license. See the LICENSE.md file for 
 full details.
 
-== Requirements
+## Requirements
 
 * Rails ~> 3.2.13
 
-== Usage
+## Usage
 
 In your controller, if you have alternative representations, put ```set_alternate_formats``` 
 in a before_filter:
