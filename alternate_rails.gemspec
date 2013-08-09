@@ -19,4 +19,9 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec", "~> 2.14"
+  s.add_development_dependency "actionpack", '>= 3.2.0'
+  s.add_development_dependency "activesupport", '>= 3.2.0'
+  s.add_development_dependency "activemodel", '>= 3.2.0'
+  s.add_development_dependency "railties", '>= 3.2.0'
+
 end

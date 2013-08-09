@@ -99,6 +99,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionpack (>= 3.2.0)
+  activemodel (>= 3.2.0)
+  activesupport (>= 3.2.0)
   alternate_rails!
+  railties (>= 3.2.0)
   rspec (~> 2.14)
   sqlite3
