@@ -13,7 +13,7 @@ full details.
 
 ## Usage
 
-In your controller, if you have alternative representations, call ```set_alternate_formats``` 
+In your controller, if you have alternative representations, call ```alternate_formats``` 
 from a before_filter:
 
 ```before_filter(:only => [:index, :show]) { alternate_formats [:json, :ics] }```
