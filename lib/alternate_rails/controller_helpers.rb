@@ -8,7 +8,7 @@ module AlternateRails
     
     def send_headers
       if params[:format].nil? && request.headers['action_dispatch.request.accepts']
-        format = request.headers['action_dispatch.request.accepts'].first
+        format = request.format
         params[:format] = format.ref
         params[:only_path] = true
         if @alternate_formats.include? params[:format]
