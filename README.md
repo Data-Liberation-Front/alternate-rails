@@ -1,6 +1,6 @@
 # AlternateRails
 
-Helpers for Rails 3.2 for building autodiscovery and links for alternative page formats.
+Helpers for Rails 3.2 for building autodiscovery and links for alternative page formats. Also sends correct `Content-Location` headers if no extension has been specified.
 
 ## License
 
@@ -13,10 +13,10 @@ full details.
 
 ## Usage
 
-In your controller, if you have alternative representations, call ```set_alternate_formats``` 
+In your controller, if you have alternative representations, call ```alternate_formats``` 
 from a before_filter:
 
-```before_filter(:only => [:index, :show]) { set_alternate_formats [:json, :ics] }```
+```before_filter(:only => [:index, :show]) { alternate_formats [:json, :ics] }```
 
 In the header in your layout, call `alternate_auto_discovery_link_tags` to generate
 autodiscover link tags.
