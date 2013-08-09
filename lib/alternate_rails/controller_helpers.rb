@@ -7,9 +7,8 @@ module AlternateRails
     end
     
     def send_headers
-      if params[:format].nil? && request.headers['action_dispatch.request.accepts']
-        format = request.format
-        params[:format] = format.ref
+      if params[:format].nil?
+        params[:format] = request.format.ref
         params[:only_path] = true
         if @alternate_formats.include? params[:format]
           headers['Content-Location'] = url_for params
