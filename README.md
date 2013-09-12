@@ -22,4 +22,8 @@ In the header in your layout, call `alternate_auto_discovery_link_tags` to gener
 autodiscover link tags.
 
 In your view, call `alternate_link_buttons` to build some buttons for links. Currently these 
-assume bootstrap and font-awesome, but it would be good to make styling more flexible
+assume bootstrap and font-awesome, but it would be good to make styling more flexible.
+
+If you want to change elements of the link buttons, you can specify a class and / or icon as follows:
+
+  	alternate_link_buttons(:class => 'myclass', :icon => 'icon-myicon')
