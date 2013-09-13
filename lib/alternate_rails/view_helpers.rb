@@ -36,7 +36,7 @@ module AlternateRails
       safe_join((@alternate_formats||[]).map { |f| alternate_auto_discovery_link_tag(f)})
     end
   
-    def alternate_link_buttons(options)
+    def alternate_link_buttons(options = {})
       safe_join((@alternate_formats||[]).map { |f| alternate_button(f, options)})
     end
 
