@@ -1,3 +1,11 @@
+[![Build Status](http://img.shields.io/travis/theodi/alternate-rails.svg)](https://travis-ci.org/theodi/alternate-rails)
+[![Dependency Status](http://img.shields.io/gemnasium/theodi/alternate-rails.svg)](https://gemnasium.com/theodi/alternate-rails)
+[![Coverage Status](http://img.shields.io/coveralls/theodi/alternate-rails.svg)](https://coveralls.io/r/theodi/alternate-rails)
+[![Code Climate](http://img.shields.io/codeclimate/github/theodi/alternate-rails.svg)](https://codeclimate.com/github/theodi/alternate-rails)
+[![Gem Version](http://img.shields.io/gem/v/alternate_rails.svg)](https://rubygems.org/gems/alternate_rails)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://theodi.mit-license.org)
+[![Badges](http://img.shields.io/:badges-7/7-ff6799.svg)](https://github.com/pikesley/badger)
+
 # AlternateRails
 
 Helpers for Rails 3.2 for building autodiscovery and links for alternative page formats. Also sends correct `Content-Location` headers if no extension has been specified.
