@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.name        = "alternate_rails"
   spec.version     = AlternateRails::VERSION
   spec.authors     = ["James Smith"]
+  spec.license     = "MIT"
   spec.email       = ["james.smith@theodi.org"]
   spec.homepage    = "http://"
   spec.summary     = "Helpers to make adding links to alternate formats easy"
