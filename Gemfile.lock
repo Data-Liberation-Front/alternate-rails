@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    alternate_rails (0.0.1)
-      rails (~> 3.2.13)
+    alternate_rails (0.0.2)
+      rails (>= 3.2.13)
 
 GEM
   remote: http://rubygems.org/
@@ -109,7 +109,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.38)
+    tzinfo (0.3.39)
 
 PLATFORMS
   ruby
