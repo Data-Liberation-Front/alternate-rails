@@ -5,7 +5,7 @@ module AlternateRails
       @alternate_formats = formats
       send_headers
     end
-    
+
     def send_headers
       if params[:format].nil?
         params[:format] = request.format.ref
@@ -15,6 +15,6 @@ module AlternateRails
         end
       end
     end
-      
+
   end
 end
