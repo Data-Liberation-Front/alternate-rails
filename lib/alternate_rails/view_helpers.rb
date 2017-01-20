@@ -2,7 +2,7 @@ module AlternateRails
   module ViewHelpers
 
     def alternate_url(new_params)
-      url_for params.merge(new_params)
+      url_for params.permit(:format).merge(new_params)
     end
 
     def alternate_button(format, options)
@@ -22,7 +22,7 @@ module AlternateRails
     end
 
     def alternate_auto_discovery_link_tag(format)
-      sanitize auto_discovery_link_tag(
+      auto_discovery_link_tag(
         :rel,
         alternate_url(:format => format),
         {
