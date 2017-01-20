@@ -25,6 +25,7 @@ module Test
   class Application < ::Rails::Application
     # configuration here if needed
     config.active_support.deprecation = :stderr
+    config.eager_load = :false
   end
 end
 
@@ -32,7 +33,7 @@ end
 Test::Application.initialize!
 
 RSpec.configure do |config|
-  config.treat_symbols_as_metadata_keys_with_true_values = true
+
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
 
