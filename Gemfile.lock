@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    alternate_rails (0.0.2)
+    alternate_rails (4.2.0)
       rails (>= 4.2.0)
 
 GEM

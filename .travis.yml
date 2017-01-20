@@ -3,7 +3,6 @@ rvm:
 - 2.1.5
 - 2.2.5
 - 2.3.3
-- 2.4.0
 notifications:
   irc:
     channels:
