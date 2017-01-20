@@ -22,7 +22,7 @@ module AlternateRails
     end
 
     def alternate_auto_discovery_link_tag(format)
-      auto_discovery_link_tag(
+      sanitize auto_discovery_link_tag(
         :rel,
         alternate_url(:format => format),
         {
