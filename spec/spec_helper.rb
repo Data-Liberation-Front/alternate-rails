@@ -10,7 +10,7 @@ Coveralls.wear!
 
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
- 
+
 ENV["RAILS_ENV"] ||= 'test'
 
 # Only the parts of rails we want to use
@@ -25,14 +25,15 @@ module Test
   class Application < ::Rails::Application
     # configuration here if needed
     config.active_support.deprecation = :stderr
+    config.eager_load = :false
   end
 end
- 
+
 # Initialize the application
 Test::Application.initialize!
- 
+
 RSpec.configure do |config|
-  config.treat_symbols_as_metadata_keys_with_true_values = true
+
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
 
