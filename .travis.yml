@@ -5,5 +5,5 @@ rvm:
 - 2.7.0
 sudo: false
 cache: bundler
-before_script:
+before_install:
   - gem install bundler:"~> 1.0"
