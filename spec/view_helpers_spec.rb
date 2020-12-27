@@ -6,7 +6,7 @@ describe AlternateRails::ViewHelpers do
   end
 
   before :all do
-    @view = TestView.new
+    @view = TestView.new(nil, [], nil)
   end
 
   it 'should mix in view helpers on initialization' do
