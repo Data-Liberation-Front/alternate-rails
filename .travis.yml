@@ -6,4 +6,4 @@ rvm:
 sudo: false
 cache: bundler
 before_install:
-  - gem install bundler:"~> 1.0"
+  - gem install bundler:2
